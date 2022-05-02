@@ -46,6 +46,11 @@ Resources:
 
   VPC:
     Type: AWS::EC2::VPC
+    Metadata:
+      cfn_nag:
+        rules_to_suppress:
+          - id: W60
+            reason: "VPC doesn't need flow log"
     Properties:
       CidrBlock: !FindInMap [ VpcIpRanges, Option1, VPC ]
       EnableDnsSupport: true
@@ -252,6 +257,11 @@ Resources:
 
   ControlPlane:
     Type: AWS::EKS::Cluster
+    Metadata:
+      cfn_nag:
+        rules_to_suppress:
+          - id: W82
+            reason: "KeyARN not needed"
     Properties:
       Name: !Ref AWS::StackName
       Version: "1.19"
@@ -325,6 +335,13 @@ Resources:
 
   WorkerNodesSecurityGroup:
     Type: AWS::EC2::SecurityGroup
+    Metadata:
+      cfn_nag:
+        rules_to_suppress:
+          - id: W42
+            reason: "Security Group Ingress is correct"
+          - id: F1000
+            reason: "All traffic should be allowed"
     Properties:
       GroupDescription: Security group for all the worker nodes
       VpcId: !Ref VPC
