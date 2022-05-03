@@ -32,9 +32,7 @@ Mappings:
       PrivateSubnet2: 10.100.48.0/20
       PersistenceSubnet1: 10.100.64.0/20
       PersistenceSubnet2: 10.100.80.0/20
-  # IDs of the "EKS-optimised AMIs" for the worker nodes:
-  # https://docs.aws.amazon.com/eks/latest/userguide/eks-optimized-ami.html
-  # IMPORTANT NOTE: Choose AWS EKS compatible ami IDs only
+
   EksAmiIds:
     us-east-2:
       Standard: ami-0b614a5d911900a9b
