@@ -8,3 +8,6 @@ Then cd to the project folder on your terminal and run
 pre-commit run --all-files
 
 All the tests should run and show the green "passed"
+
+The tests being run on the templates are Trim Trailing white space, End for file space, CFN-Lint and CFN-Nag. T
+To further test, cloud radar can be used to perform python unit tests that will simulate the launching of the resources and verify that they are accurately launched.

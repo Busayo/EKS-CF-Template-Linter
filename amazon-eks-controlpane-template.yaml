@@ -46,7 +46,7 @@ Resources:
     Type: AWS::EC2::VPC
     Metadata:
       cfn_nag:
-        rules_to_suppress:
+        rules_to_suppress: #we are suppressing this warning to aid our cfn-nag test
           - id: W60
             reason: "VPC doesn't need flow log"
     Properties:
