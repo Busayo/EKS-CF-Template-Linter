@@ -1,4 +1,4 @@
-This folder is a simple way to create, test and then deploy a Kubernetes cluster using CloudFormation.
+This project is a simple way to create, test and then deploy a Kubernetes cluster using CloudFormation.
 
 The CloudFormation EKS Cluster Template is the amazon-eks-controlpane-template.yaml file.
 The .pre-commit-config.yaml file is for running unit tests on the template before uploading the stack to AWS or including it in our CI/CD pipeline
