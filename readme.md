@@ -2,6 +2,9 @@
 
 This project is a simple way to create, test and then deploy a basic Kubernetes cluster using CloudFormation. However, the Cloud Formation template can be replaced by any Cloud Formation template and it would work.
 
+### Problem statement
+
+Cloud formation templates usually throw all sorts of errors that might not be caught by traditional linters. Sometimes the errrors are not caught till much later on after a lot of resources have already being deployed which could be lead to a lot of problems. This particular linter checks that the resources being deployed are deployed in the right order, checks the syntax and ensures that no errors occur during deployment.
 
 ### File Structure
 
