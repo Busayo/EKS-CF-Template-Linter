@@ -15,7 +15,7 @@ repos:
         name: cfn-nag
         language: docker_image
         entry: alpine/cfn-nag:latest --input-path /src/amazon-eks-controlpane-template.yaml
-        files: amazon-eks-controlpane-template.yaml
+        files: amazon-eks-controlpane-template.yaml #to be replaced with name of file to perform linting on
         pass_filenames: false
 #  -   id: pytest
 #      name: pytest
