@@ -12,7 +12,7 @@ from cloud_radar.cf.unit._template import (
 @pytest.fixture
 def template():
     template_path = Path(__file__).parent / \
-        "/Users/busayo.akanni/Desktop/templates/amazon-eks-controlpane-template.yaml"
+        "/Users/busayo.akanni/Desktop/templates/amazon-eks-controlpane-template.yaml" #ensure to change the file path appropriately.
 
     return Template.from_yaml(template_path.resolve(), {})
 
