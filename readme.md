@@ -12,7 +12,8 @@ This project is a simple way to create, test and then deploy a basic Kubernetes 
 
 ### How to run the program
 
-* To run the tests, you must ensure that python3.9 is installed
+* To run the tests, you must ensure that python3.9 is installed.
+* Ensure you replace the amazon-eks-controlpane-template.yaml with the CF file you want to lint, also replace the file name in .pre-commit-config.yaml with the CF file name to be linted.
 * Then cd to the project folder on your terminal and run <pre-commit run --all-files>
 
 All the tests should run and show the green "passed"
