@@ -5,7 +5,7 @@ This project is a simple way to create, test and then deploy a basic Kubernetes 
 
 ### File Structure
 
-* amazon-eks-controlpane-template.yaml file: This is the CloudFormation EKS Cluster Template
+* amazon-eks-controlpane-template.yaml file: This is the CloudFormation EKS Cluster Template. Ideally, this program works with any type of cloudformation template.
 * .pre-commit-config.yaml file: This is used for running unit tests on the template before uploading the stack to AWS or including it in our CI/CD pipeline
 * requirements.txt: This can be installed before running the file but ideally you only need python3.9 installed on the device that this program is run on.
 
