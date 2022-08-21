@@ -1,6 +1,6 @@
 # Program that lints an EKS Cloud Formation Template
 
-This project is a simple way to create, test and then deploy a basic Kubernetes cluster using CloudFormation. However, the Cloud Formation template can be replaced by any Cloud Formation template and it would work.
+This project is a simple way to create, lint and then deploy a basic Kubernetes cluster using CloudFormation. However, the Cloud Formation template included in the project can be replaced by any Cloud Formation template and it would work.
 
 ### Problem statement
 
