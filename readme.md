@@ -1,5 +1,3 @@
-Sure, here's a revised version of the readme file with improved formatting:
-
 # EKS Cloud Formation Template Linter
 
 This project is a simple way to create, lint, and deploy a basic Kubernetes cluster using CloudFormation. However, the CloudFormation template included in the project can be replaced by any CloudFormation template and it would work.
